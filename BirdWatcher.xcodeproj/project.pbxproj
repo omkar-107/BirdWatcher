@@ -14,6 +14,9 @@
 		2C85295F2BD8FD4B005053C0 /* BirdWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85295E2BD8FD4B005053C0 /* BirdWatcherTests.swift */; };
 		2C8529692BD8FD4B005053C0 /* BirdWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8529682BD8FD4B005053C0 /* BirdWatcherUITests.swift */; };
 		2C85296B2BD8FD4B005053C0 /* BirdWatcherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85296A2BD8FD4B005053C0 /* BirdWatcherUITestsLaunchTests.swift */; };
+		2CA39D0A2BDA4EF500E8792F /* MyImageClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39D092BDA4EF500E8792F /* MyImageClassifier 1.mlmodel */; };
+		2CA39D0C2BDA4FFC00E8792F /* ML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39D0B2BDA4FFC00E8792F /* ML.swift */; };
+		2CA39D102BDA5C0900E8792F /* Birds.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39D0F2BDA5C0900E8792F /* Birds.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		2C8529642BD8FD4B005053C0 /* BirdWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8529682BD8FD4B005053C0 /* BirdWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdWatcherUITests.swift; sourceTree = "<group>"; };
 		2C85296A2BD8FD4B005053C0 /* BirdWatcherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdWatcherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CA39D092BDA4EF500E8792F /* MyImageClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MyImageClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		2CA39D0B2BDA4FFC00E8792F /* ML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ML.swift; sourceTree = "<group>"; };
+		2CA39D0F2BDA5C0900E8792F /* Birds.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Birds.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				2C85294D2BD8FD49005053C0 /* BirdWatcherApp.swift */,
+				2CA39D0B2BDA4FFC00E8792F /* ML.swift */,
+				2CA39D0F2BDA5C0900E8792F /* Birds.mlmodel */,
 				2C85294F2BD8FD49005053C0 /* ContentView.swift */,
+				2CA39D092BDA4EF500E8792F /* MyImageClassifier 1.mlmodel */,
 				2C8529512BD8FD4B005053C0 /* Assets.xcassets */,
 				2C8529532BD8FD4B005053C0 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA39D102BDA5C0900E8792F /* Birds.mlmodel in Sources */,
+				2CA39D0C2BDA4FFC00E8792F /* ML.swift in Sources */,
 				2C8529502BD8FD49005053C0 /* ContentView.swift in Sources */,
 				2C85294E2BD8FD49005053C0 /* BirdWatcherApp.swift in Sources */,
+				2CA39D0A2BDA4EF500E8792F /* MyImageClassifier 1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +436,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BirdWatcher/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access for clicking picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +465,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BirdWatcher/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access for clicking picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

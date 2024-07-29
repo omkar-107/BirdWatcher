@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct BirdWatcherApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
         }
